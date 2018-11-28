@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>FIRST NAME</h1>
+ <ul>
+     {% for gr in all_gr_reg %}
+     <li>
+         <a href="/students/{{ gr.gr_no}}/"> {{gr.first_name}}
+         </a>
+
+     </li>
+     {%endfor%}
+ </ul>
+
+</body>
+</html>
